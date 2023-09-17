@@ -5,7 +5,6 @@
 #include "stdio.h"
 #include "stdbool.h"
 
-
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 640
 #define MAP_WIDTH 8
@@ -26,7 +25,7 @@ static int map[MAP_WIDTH][MAP_HEIGTH] = {
         1,0,0,0,0,0,0,1,
         1,0,0,0,0,0,0,1,
         1,0,0,0,0,0,0,1,
-        1,0,0,0,0,0,0,1,
+        1,1,1,0,0,0,0,1,
         1,0,0,0,0,0,0,1,
         1,0,0,0,0,0,0,1,
         1,1,1,1,1,1,1,1,
@@ -93,13 +92,34 @@ void init(){
 void rendermap(){
 //    SDL_Rect textureRect = {0,0, 100,100};
 //    SDL_RenderCopy(renderer, texture, NULL, &textureRect);
+    // map grid render
+    SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
+    int mapx = 0;
+    int mapy = 0;
+    for (int i = 0; i < SCREEN_HEIGHT; i+=80) {
+        for (int j = 0; j < SCREEN_WIDTH; j+=80) {
+            SDL_Rect rect = {mapx, mapy, 80, 80};
+            SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
+            SDL_RenderDrawRect(renderer, &rect);
 
+            if (map[(i/80)][j/80] == 1){
+                SDL_SetRenderDrawColor(renderer,0,0,255,SDL_ALPHA_OPAQUE);
+                SDL_RenderFillRect(renderer, &rect);
+            }
+            mapx += 80;
 
+        }
+        mapx = 0;
+        mapy += 80;
+    }
+    SDL_RenderPresent(renderer);
 }
+
 
 void gameloop(){
     bool run = true;
     SDL_Event e;
+
 
     double posx = SCREEN_WIDTH / 2, posy = SCREEN_HEIGHT / 2; // x and y start pos
 
@@ -108,56 +128,15 @@ void gameloop(){
     double degree = -150; // start derecesi
     double playerx = SCREEN_WIDTH / 2 - 70; // 250
     double playery = SCREEN_HEIGHT / 2 - 40; // 290
-    int mapx = 0;
-    int mapy = 0;
+
     double dirlength = 200; // direction line uzunluk,
     double FOV = 0;
 
     Player p = {playerx, playery, 45, 100}; // dir = 45 derece
 
+
+
     while(run){
-
-        // map grid render
-        for (int i = 0; i < SCREEN_HEIGHT; i+=80) {
-            for (int j = 0; j < SCREEN_WIDTH; j+=80) {
-                SDL_Rect rect = {mapx, mapy, 80, 80};
-                SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
-                SDL_RenderDrawRect(renderer, &rect);
-
-                if (map[(i/80)][j/80] == 1){
-                    SDL_SetRenderDrawColor(renderer,0,0,255,SDL_ALPHA_OPAQUE);
-                    SDL_RenderFillRect(renderer, &rect);
-                }
-                mapx += 80;
-                SDL_RenderPresent(renderer);
-            }
-            mapx = 0;
-            mapy += 80;
-        }
-
-
-        for (int x = 0; x < SCREEN_WIDTH; x++) {
-            p.dir = x;
-
-        }
-
-        SDL_SetRenderDrawColor(renderer,255,100,0,SDL_ALPHA_OPAQUE);
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx+dirlength, p.posy-dirlength); // direction ray
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx+200, p.posy-100); // yatay çizgi
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx+100, p.posy-200); // dikey çizgi
-        SDL_RenderPresent(renderer);
-
-        FOV = atan(50/100) + atan(100 / 50);
-        FOV = (FOV * 180 / M_PI);  // radian to degrees;
-
-
-//        posx = cos(dtr(degree)) * 100 + 320;
-//        posy = sin(dtr(degree)) * 100 + 240;
-//
-//        if (degree == -29){degree = -150;}
-//        printf("%f\n", degree);
-//        degree++;
-
         while(SDL_PollEvent(&e) != 0){
             if (e.type == SDL_QUIT){
                 run = false;
@@ -166,24 +145,58 @@ void gameloop(){
             else if (e.type == SDL_KEYDOWN){
                 switch (e.key.keysym.sym) {
                     case SDLK_w:
-                        p.posy-=20;
+                        if(p.posy < 80){
+                            continue;
+                        }
+                        else{
+                            p.posy -= 5;
+                        }
                         break;
                     case SDLK_a:
-                        p.posx-=20;
+                        if (p.posx < 80){
+
+                        }
+                        p.posx -= 5;
                         break;
                     case SDLK_s:
-                        p.posy += 20;
+                        p.posy += 5;
                         break;
                     case SDLK_d:
-                        p.posx += 20;
+                        p.posx += 5;
                         break;
                     case SDLK_q:
 
+                        break;
+                    case SDLK_e:
+                        break;
                     default:
                         break;
                 }
             }
         }
+        SDL_SetRenderDrawColor(renderer, 0,0,0,0);
+        SDL_RenderClear(renderer);
+        rendermap();
+        SDL_SetRenderDrawColor(renderer,255,100,0,SDL_ALPHA_OPAQUE);
+        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx+dirlength, p.posy-dirlength); // direction ray
+
+        SDL_SetRenderDrawColor(renderer,255,255,0,SDL_ALPHA_OPAQUE);
+
+        SDL_RenderDrawRect(renderer, &(SDL_Rect){p.posx-5, p.posy, 10, 10}); // draw player
+        SDL_RenderPresent(renderer);
+//
+//        FOV = atan(50/100) + atan(100 / 50);
+//        FOV = (FOV * 180 / M_PI);  // radian to degrees;
+
+
+//        p.posx = cos(dtr(degree)) * dirlength + playerx;
+//        p.posy = sin(dtr(degree)) * dirlength + playery;
+//
+//        if (degree == -29){degree = -150;}
+//        printf("%f\n", degree);
+//        degree++;
+
+
     }
 }
 
