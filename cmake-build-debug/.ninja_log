@@ -1,0 +1,5 @@
+# ninja log v5
+2	509	7166725073166312	CMakeFiles/sdlraycastingc.dir/main.c.obj	1e35b2e5e28b6905
+510	617	7166725074206239	sdlraycastingc.exe	b5964b4ee9eab102
+7	92	7164300362366111	CMakeFiles/sdlraycastingc.dir/render.c.obj	434236c6986cfda
+6	498	7164301639387599	CMakeFiles/sdlraycastingc.dir/game.c.obj	8431e5a7e9bb4672
