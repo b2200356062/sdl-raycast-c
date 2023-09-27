@@ -178,7 +178,7 @@ void gameloop(){
         SDL_RenderClear(renderer);
         rendermap();
         SDL_SetRenderDrawColor(renderer,255,100,0,SDL_ALPHA_OPAQUE);
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx+dirlength, p.posy-dirlength); // direction ray
+        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx, p.posy-dirlength); // direction ray
 
         SDL_SetRenderDrawColor(renderer,255,255,0,SDL_ALPHA_OPAQUE);
 
