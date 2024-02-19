@@ -184,5 +184,4 @@ CMakeFiles/main.dir/main.c.obj: \
  C:/msys64/mingw64/include/stdio.h \
  C:/msys64/mingw64/include/corecrt_stdio_config.h \
  C:/msys64/mingw64/include/swprintf.inl \
- C:/msys64/mingw64/include/sec_api/stdio_s.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h
+ C:/msys64/mingw64/include/sec_api/stdio_s.h
