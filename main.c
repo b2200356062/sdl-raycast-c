@@ -16,7 +16,6 @@ typedef struct {
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
-SDL_Texture *texture = NULL;
 
 // create player
 
@@ -77,16 +76,6 @@ void init(){
         return;
     }
 
-//    wsurface = SDL_GetWindowSurface(window);
-//    if (wsurface == NULL){
-//        return;
-//    }
-
-    texture = IMG_LoadTexture(renderer, "char.png");
-    if (texture == NULL){
-        printf("texture cannot be loaded");
-        return;
-    }
 }
 
 void rendermap(){
@@ -99,10 +88,12 @@ void rendermap(){
     for (int i = 0; i < SCREEN_HEIGHT; i+=80) {
         for (int j = 0; j < SCREEN_WIDTH; j+=80) {
             SDL_Rect rect = {mapx, mapy, 80, 80};
+
             SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
             SDL_RenderDrawRect(renderer, &rect);
 
             if (map[(i/80)][j/80] == 1){
+
                 SDL_SetRenderDrawColor(renderer,0,0,255,SDL_ALPHA_OPAQUE);
                 SDL_RenderFillRect(renderer, &rect);
             }
@@ -133,8 +124,6 @@ void gameloop(){
     double FOV = 0;
 
     Player p = {playerx, playery, 45, 100}; // dir = 45 derece
-
-
 
     while(run){
         while(SDL_PollEvent(&e) != 0){
@@ -201,8 +190,6 @@ void gameloop(){
 }
 
 void close(){
-    SDL_DestroyTexture(texture);
-    texture = NULL;
     SDL_DestroyRenderer(renderer);
     renderer = NULL;
     SDL_DestroyWindow(window);

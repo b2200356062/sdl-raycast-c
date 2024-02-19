@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe   -g -std=gnu11 -o CMakeFiles\\main.dir\\main.c.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\main.c",
+  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/main.c",
+  "output": "CMakeFiles/main.dir/main.c.obj"
+}
+]

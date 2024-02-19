@@ -1,0 +1,3 @@
+C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build/CMakeFiles/main.dir
+C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build/CMakeFiles/edit_cache.dir
+C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build/CMakeFiles/rebuild_cache.dir
