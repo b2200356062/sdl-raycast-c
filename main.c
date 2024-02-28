@@ -64,6 +64,11 @@ void rendermap(){
     SDL_RenderPresent(renderer);
 }
 
+
+void render(){
+
+}
+
 void init(){
 
     if (SDL_Init(SDL_INIT_EVERYTHING ) < 0){
@@ -158,10 +163,15 @@ void gameloop(){
                 }
             }
         }
-        
+
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
+            
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
         
+        SDL_RenderDrawLine(renderer, 100, 200, 150, 250);
+                
         SDL_RenderPresent(renderer);
 
         }
