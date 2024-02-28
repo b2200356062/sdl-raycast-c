@@ -159,57 +159,13 @@ void gameloop(){
             }
         }
         
-        SDL_SetRenderDrawColor(renderer, 0,0,0,0);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
-
-        for (int i = 0; i < SCREEN_WIDTH; i++){   
-            float rayangle = (p.angle - p.fov / 2.0f) + ((float) i / (float) SCREEN_WIDTH);
-
-            int distancetowall = 0;
-            int hitwall = 0;
-
-            float eyex = sin(rayangle);
-            float eyey = cos(rayangle);
-
-            while(!hitwall && distancetowall < depth){
-                distancetowall += 1;
-
-                int testx = (int)(p.posx + eyex * distancetowall);
-                int testy = (int)(p.posy + eyey * distancetowall);
-
-                printf("testx: %d\n", testx);
-                printf("testy: %d\n", testy);
-
-                if(testx < 0 || testx >= MAP_WIDTH * 80 || testy < 0 || testy >= MAP_HEIGTH * 80){
-                    hitwall = 1;
-                    distancetowall = depth;
-                }
-                else{
-
-                    if(map[testy * MAP_WIDTH + testx] == 1){
-                        hitwall = 1;
-                    }
-                }
-            }
-        SDL_SetRenderDrawColor(renderer,255,100,0,SDL_ALPHA_OPAQUE);
         
-        rendermap();
-        
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx, p.posy - dirlength); // direction ray
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx - p.angle, p.posy - p.angle);
-        
-        SDL_RenderDrawLine(renderer, p.posx, p.posy, p.posx + p.angle, p.posy - p.angle);
-        
-        SDL_SetRenderDrawColor(renderer,255,255,0,SDL_ALPHA_OPAQUE);
-
-        SDL_RenderDrawRect(renderer, &(SDL_Rect){p.posx-5, p.posy, 10, 10}); // draw player
         SDL_RenderPresent(renderer);
 
         }
-        
-       
     }
-}
 
 void close(){
     SDL_DestroyRenderer(renderer);
