@@ -1,20 +1,20 @@
 [
 {
   "directory": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\main.cpp",
-  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/main.cpp",
-  "output": "CMakeFiles/main.dir/main.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\src\\main.cpp",
+  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\player.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\player.cpp",
-  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/player.cpp",
-  "output": "CMakeFiles/main.dir/player.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\player.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\src\\player.cpp",
+  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/player.cpp",
+  "output": "CMakeFiles/main.dir/src/player.cpp.obj"
 },
 {
   "directory": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\game.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\game.cpp",
-  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/game.cpp",
-  "output": "CMakeFiles/main.dir/game.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\main.dir\\src\\game.cpp.obj -c C:\\Users\\melih\\Desktop\\compstuff\\c-cpp\\sdlraycastingc\\src\\game.cpp",
+  "file": "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/game.cpp",
+  "output": "CMakeFiles/main.dir/src/game.cpp.obj"
 }
 ]

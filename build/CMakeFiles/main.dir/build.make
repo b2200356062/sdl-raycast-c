@@ -68,60 +68,60 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/main.cpp
-CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\main.cpp
+CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/main.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/main.cpp
+CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.obj -MF CMakeFiles\main.dir\src\main.cpp.obj.d -o CMakeFiles\main.dir\src\main.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\main.cpp
 
-CMakeFiles/main.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\main.cpp > CMakeFiles\main.dir\main.cpp.i
+CMakeFiles/main.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\main.cpp > CMakeFiles\main.dir\src\main.cpp.i
 
-CMakeFiles/main.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\main.cpp -o CMakeFiles\main.dir\main.cpp.s
+CMakeFiles/main.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\main.cpp -o CMakeFiles\main.dir\src\main.cpp.s
 
-CMakeFiles/main.dir/player.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/player.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/player.cpp
-CMakeFiles/main.dir/player.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/player.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/player.cpp.obj -MF CMakeFiles\main.dir\player.cpp.obj.d -o CMakeFiles\main.dir\player.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\player.cpp
+CMakeFiles/main.dir/src/player.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/player.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/player.cpp
+CMakeFiles/main.dir/src/player.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/player.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/player.cpp.obj -MF CMakeFiles\main.dir\src\player.cpp.obj.d -o CMakeFiles\main.dir\src\player.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\player.cpp
 
-CMakeFiles/main.dir/player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/player.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\player.cpp > CMakeFiles\main.dir\player.cpp.i
+CMakeFiles/main.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/player.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\player.cpp > CMakeFiles\main.dir\src\player.cpp.i
 
-CMakeFiles/main.dir/player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/player.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\player.cpp -o CMakeFiles\main.dir\player.cpp.s
+CMakeFiles/main.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/player.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\player.cpp -o CMakeFiles\main.dir\src\player.cpp.s
 
-CMakeFiles/main.dir/game.cpp.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/game.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/game.cpp
-CMakeFiles/main.dir/game.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/game.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/game.cpp.obj -MF CMakeFiles\main.dir\game.cpp.obj.d -o CMakeFiles\main.dir\game.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\game.cpp
+CMakeFiles/main.dir/src/game.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/game.cpp.obj: C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/src/game.cpp
+CMakeFiles/main.dir/src/game.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/game.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game.cpp.obj -MF CMakeFiles\main.dir\src\game.cpp.obj.d -o CMakeFiles\main.dir\src\game.cpp.obj -c C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\game.cpp
 
-CMakeFiles/main.dir/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/game.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\game.cpp > CMakeFiles\main.dir\game.cpp.i
+CMakeFiles/main.dir/src/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/game.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\game.cpp > CMakeFiles\main.dir\src\game.cpp.i
 
-CMakeFiles/main.dir/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/game.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\game.cpp -o CMakeFiles\main.dir\game.cpp.s
+CMakeFiles/main.dir/src/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/game.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\melih\Desktop\compstuff\c-cpp\sdlraycastingc\src\game.cpp -o CMakeFiles\main.dir\src\game.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.cpp.obj" \
-"CMakeFiles/main.dir/player.cpp.obj" \
-"CMakeFiles/main.dir/game.cpp.obj"
+"CMakeFiles/main.dir/src/main.cpp.obj" \
+"CMakeFiles/main.dir/src/player.cpp.obj" \
+"CMakeFiles/main.dir/src/game.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main.exe: CMakeFiles/main.dir/main.cpp.obj
-main.exe: CMakeFiles/main.dir/player.cpp.obj
-main.exe: CMakeFiles/main.dir/game.cpp.obj
+main.exe: CMakeFiles/main.dir/src/main.cpp.obj
+main.exe: CMakeFiles/main.dir/src/player.cpp.obj
+main.exe: CMakeFiles/main.dir/src/game.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/compiler_depend.ts
 main.exe: CMakeFiles/main.dir/linkLibs.rsp

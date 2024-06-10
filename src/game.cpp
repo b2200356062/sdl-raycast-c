@@ -36,14 +36,20 @@ void Game::init()
         printf("cannot init renderer\n");
         return;
     }
+
+    if(!(IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG))){
+        printf("error initing the image library");
+        return;
+    }
+
+    // init player
+    
+    player = new Player(100, 10, renderer);
+    
 }
 
 void Game::gameloop()
 {
-    double time = 0; // time of current frame
-    double oldtime = 0; // time of previous frame
-    double dirlength = 30; // direction line uzunluk,
-
     SDL_Event e;
     int run = 1;
 
@@ -57,15 +63,28 @@ void Game::gameloop()
 
             else if (e.type == SDL_KEYDOWN){
                 switch (e.key.keysym.sym) {
-                    case SDLK_w:
+                    // case SDLK_w:
+                    // player->setverticalSpeed(10);
+                    // player->move(player->getverticalSpeed(), player->gethorizontalSpeed());
+                    // break;
 
-                    case SDLK_a:
+                    // case SDLK_a:
+                    // player->sethorizontalSpeed(-10);
+                    // player->move(player->getverticalSpeed(), player->gethorizontalSpeed());
+                    // break;
 
-                    case SDLK_s:
+                    // case SDLK_s:
+                    // player->setverticalSpeed(-10);
+                    // player->move(player->getverticalSpeed(), player->gethorizontalSpeed());
+                    // break;
 
-                    case SDLK_d:
+                    // case SDLK_d:
+                    // player->sethorizontalSpeed(10);
+                    // player->move(player->getverticalSpeed(), player->gethorizontalSpeed());
+                    // break;
 
                     case SDLK_q:
+                    // rotate 
 
                     case SDLK_e:
 
@@ -93,9 +112,6 @@ void Game::rendermap()
 //    SDL_RenderCopy(renderer, texture, nullptr, &textureRect);
     // map grid render
 
-    SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
-    SDL_RenderClear(renderer);
-
     int mapx = 0;
     int mapy = 0;
     for (int i = 0; i < SCREEN_HEIGHT; i+=80) {
@@ -107,7 +123,7 @@ void Game::rendermap()
 
             if (map[i/80][j/80] == 1){
 
-                SDL_SetRenderDrawColor(renderer,0,0,0,SDL_ALPHA_OPAQUE);
+                SDL_SetRenderDrawColor(renderer,0,0,255,SDL_ALPHA_OPAQUE);
                 SDL_RenderFillRect(renderer, &rect);
             }
             mapx += 80;
@@ -116,13 +132,24 @@ void Game::rendermap()
         mapx = 0;
         mapy += 80;
     }
-    SDL_RenderPresent(renderer);
+
+
+
+    //SDL_RenderPresent(renderer);
 }
 
+void Game::renderplayer(Player* player)
+{
+    SDL_SetRenderDrawColor(renderer,255,255,255,SDL_ALPHA_OPAQUE);
+    SDL_RenderCopy(renderer, player->getTexture(), NULL, player->getPlayerRect());
+}
 
 void Game::render()
 {
     rendermap();
+    renderplayer(player);
+
+    SDL_RenderPresent(renderer);
 }
 
 

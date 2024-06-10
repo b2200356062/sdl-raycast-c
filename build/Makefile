@@ -128,77 +128,77 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-game.obj: game.cpp.obj
-.PHONY : game.obj
+src/game.obj: src/game.cpp.obj
+.PHONY : src/game.obj
 
 # target to build an object file
-game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/game.cpp.obj
-.PHONY : game.cpp.obj
+src/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.cpp.obj
+.PHONY : src/game.cpp.obj
 
-game.i: game.cpp.i
-.PHONY : game.i
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
 
 # target to preprocess a source file
-game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/game.cpp.i
-.PHONY : game.cpp.i
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
 
-game.s: game.cpp.s
-.PHONY : game.s
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
 
 # target to generate assembly for a file
-game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/game.cpp.s
-.PHONY : game.cpp.s
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-player.obj: player.cpp.obj
-.PHONY : player.obj
+src/player.obj: src/player.cpp.obj
+.PHONY : src/player.obj
 
 # target to build an object file
-player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/player.cpp.obj
-.PHONY : player.cpp.obj
+src/player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/player.cpp.obj
+.PHONY : src/player.cpp.obj
 
-player.i: player.cpp.i
-.PHONY : player.i
+src/player.i: src/player.cpp.i
+.PHONY : src/player.i
 
 # target to preprocess a source file
-player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/player.cpp.i
-.PHONY : player.cpp.i
+src/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
 
-player.s: player.cpp.s
-.PHONY : player.s
+src/player.s: src/player.cpp.s
+.PHONY : src/player.s
 
 # target to generate assembly for a file
-player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/player.cpp.s
-.PHONY : player.cpp.s
+src/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
 # Help Target
 help:
@@ -209,15 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... game.obj
-	@echo ... game.i
-	@echo ... game.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... player.obj
-	@echo ... player.i
-	@echo ... player.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/player.obj
+	@echo ... src/player.i
+	@echo ... src/player.s
 .PHONY : help
 
 
