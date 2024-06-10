@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/main.c" "CMakeFiles/main.dir/main.c.obj" "gcc" "CMakeFiles/main.dir/main.c.obj.d"
+  "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/game.cpp" "CMakeFiles/main.dir/game.cpp.obj" "gcc" "CMakeFiles/main.dir/game.cpp.obj.d"
+  "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
+  "C:/Users/melih/Desktop/compstuff/c-cpp/sdlraycastingc/player.cpp" "CMakeFiles/main.dir/player.cpp.obj" "gcc" "CMakeFiles/main.dir/player.cpp.obj.d"
   "" "main.exe" "gcc" "CMakeFiles/main.dir/link.d"
   )
 
